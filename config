@@ -30,7 +30,7 @@ bindsym $mod+Return exec "~/Scripts/terminal"
 bindsym $mod+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec dmenu_run
+bindsym $mod+r exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -159,7 +159,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym Mod1+r mode "resize"
 
 # Autolauches.
 exec xautolock -time 5 -locker xscreensaver-command -l
