@@ -164,6 +164,7 @@ bindsym Mod1+r mode "resize"
 new_window 1pixel
 
 # Autolauches.
+exec xscreensaver
 exec xautolock -time 5 -locker xscreensaver-command -l
 exec $HOME/Scripts/touchpad_disable_touch_click.sh
 exec --no-startup-id feh --bg-fill ~/Scripts/wallpapers/jake_dude_sucking.jpg
