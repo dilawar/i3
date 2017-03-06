@@ -104,7 +104,7 @@ ${endif}
     },
 
     {
-        "full_text": " ${time %a %d/%m/%y} ${time %H:%M:%S} ",
+        "full_text": " ${time %A, %B %d, %Y} ${time %H:%M:%S} ",
         "color": ${if_match ${time %u}>5}"\#00CC00"${else}"\#CC0000"${endif}
     }
 ],
