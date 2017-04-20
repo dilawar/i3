@@ -165,7 +165,7 @@ new_window 1pixel
 
 # Autolauches.
 exec xscreensaver -no-splash
-exec xautolock -time 5 -locker xscreensaver-command -l
+exec xautolock -time 5 -locker i3lock -c 000000 
 exec $HOME/Scripts/touchpad_disable_touch_click.sh
 exec --no-startup-id feh --bg-fill ~/Scripts/wallpapers/jake_dude_sucking.jpg
 # Start i3bar to display a workspace bar (plus the system information i3status
