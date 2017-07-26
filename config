@@ -173,3 +173,5 @@ exec --no-startup-id feh --bg-fill ~/Scripts/wallpapers/jake_dude_sucking.jpg
 bar {
         status_command $HOME/.config/i3/i3status
 }
+# Launch gnome-session.
+exec gnome-session
