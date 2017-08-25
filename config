@@ -125,7 +125,6 @@ for_window [ class="[.]*ImageJ[.]*" ] floating enable
 for_window [ class="[.]*gimp[.]*"] floating enable
 for_window [ class="[.]*scilab[.]*"] floating enable
 for_window [ class="[.]*scribus[.]*"] floating enable
-for_window [ class="[.]*\.py$"] floating enable
 
 # reload the configuration file
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -161,7 +160,9 @@ mode "resize" {
 bindsym Mod1+r mode "resize"
 
 # border
-new_window 1pixel
+new_window pixel 3
+bindsym $mod+Shift+y border pixel 3
+bindsym $mod+Shift+u border none
 
 # Autolauches.
 exec xscreensaver -no-splash
