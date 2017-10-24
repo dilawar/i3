@@ -24,7 +24,7 @@ font -misc-fixed-medium-r-normal--12-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "xterm"
+bindsym $mod+Return exec "urxvt"
 
 # kill focused window
 bindsym $mod+c kill
@@ -166,7 +166,7 @@ bindsym $mod+Shift+u border none
 
 # Autolauches.
 exec xscreensaver -no-splash
-exec xautolock -time 5 -locker i3lock -c 000000 
+exec xautolock -time 5 -locker i3lock
 exec $HOME/Scripts/touchpad_disable_touch_click.sh
 exec --no-startup-id feh --bg-fill ~/Scripts/wallpapers/jake_dude_sucking.jpg
 # Start i3bar to display a workspace bar (plus the system information i3status
