@@ -176,3 +176,4 @@ bar {
 }
 # Launch gnome-session.
 exec gnome-session
+exec urxvtd
