@@ -50,14 +50,14 @@ TEXT
 
 # JSON for i3bar
 [
-${if_match "${exec ~/bin/spotify/spotify-control getStatus}"!="Spotify is not running"} \
+${if_match "${exec spotify-control getStatus}"!="Spotify is not running"} \
     {
         "full_text": " ${scroll 30 \
-${exec ~/bin/spotify/spotify-control getArtist} - \
-${exec ~/bin/spotify/spotify-control getTitle}} ",
+${exec spotify-control getArtist} - \
+${exec spotify-control getTitle}} ",
         "color":
-            ${if_match "${exec ~/bin/spotify/spotify-control getStatus}"=="Playing"}"\#00CC00"${else}
-                ${if_match "${exec ~/bin/spotify/spotify-control getStatus}"=="Paused"}"\#FF8000"${else}
+            ${if_match "${exec spotify-control getStatus}"=="Playing"}"\#00CC00"${else}
+                ${if_match "${exec spotify-control getStatus}"=="Paused"}"\#FF8000"${else}
                     "\#CC0000"
                 ${endif}
             ${endif} 
@@ -91,11 +91,10 @@ ${endif}
             ${endif} 
     },
     {
-        "full_text": " Vol: ${exec amixer sget 'Master' | grep 'Front:' | cut -c31-33 } "
+        "full_text": " Vol: ${exec amixer sget 'Master' | grep -oP '(?<=\[)\d+%(?=\])' | head -n 1 } " 
     },
-
     {
-        "full_text": "JACKASS: ${exec cat $HOME/.cache/jackass/mic }"
+        "full_text": "JackAss: ${exec cat $HOME/.cache/jackass/mic }"
     },
 
     {
