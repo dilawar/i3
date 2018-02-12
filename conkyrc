@@ -94,6 +94,9 @@ ${endif}
         "full_text": " Vol: ${exec amixer sget 'Master' | grep 'Front:' | cut -c31-33 } "
     },
 
+    {
+        "full_text": "JACKASS: ${exec cat $HOME/.cache/jackass/mic }"
+    },
 
     {
         "full_text": "bat:", "separator": false, "separator_block_width":3
