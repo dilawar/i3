@@ -50,19 +50,9 @@ TEXT
 
 # JSON for i3bar
 [
-${if_match "${exec spotify-control getStatus}"!="Spotify is not running"} \
     {
-        "full_text": " ${scroll 30 \
-${exec spotify-control getArtist} - \
-${exec spotify-control getTitle}} ",
-        "color":
-            ${if_match "${exec spotify-control getStatus}"=="Playing"}"\#00CC00"${else}
-                ${if_match "${exec spotify-control getStatus}"=="Paused"}"\#FF8000"${else}
-                    "\#CC0000"
-                ${endif}
-            ${endif} 
+        "full_text" : "${execpi 300 gcalcli --conky agenda --calendar dilawar}"
     },
-${endif}
     {
         "full_text": " HDD:${fs_free /} "
     },
