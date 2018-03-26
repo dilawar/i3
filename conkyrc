@@ -1,5 +1,4 @@
 ### Conky configuration file
-## Output is printed to the console -> i3bar
 
 ## No output to X <yes/no>
 out_to_x no
@@ -50,9 +49,6 @@ TEXT
 
 # JSON for i3bar
 [
-    {
-        "full_text" : "${execpi 300 gcalcli --conky agenda --calendar dilawar}"
-    },
     {
         "full_text": " HDD:${fs_free /} "
     },
