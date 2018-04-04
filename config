@@ -126,7 +126,7 @@ for_window [ class="[.]*ImageJ[.]*" ] floating enable
 for_window [ class="[.]*gimp[.]*"] floating enable
 for_window [ class="[.]*scilab[.]*"] floating enable
 for_window [ class="[.]*scribus[.]*"] floating enable
-for_window [ class="[.]*kruler[.]*" ] floating enable
+for_window [ class="[.]*ruler[.]*" ] floating enable
 
 # reload the configuration file
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
