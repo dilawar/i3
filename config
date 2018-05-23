@@ -136,7 +136,8 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q exit
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
+mode "resize" 
+{
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -167,8 +168,8 @@ bindsym $mod+Shift+y border pixel 3
 bindsym $mod+Shift+u border none
 
 # Autolauches.
-exec xscreensaver -no-splash
-exec xautolock -time 5 -locker xlock
+# exec xscreensaver -no-splash
+# exec xautolock -time 5 -locker xlock
 exec $HOME/Scripts/touchpad_disable_touch_click.sh
 # exec --no-startup-id feh --bg-fill ~/Scripts/wallpapers/jake_dude_sucking.jpg
 # Start i3bar to display a workspace bar (plus the system information i3status
