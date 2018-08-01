@@ -178,5 +178,5 @@ bar {
     status_command $HOME/.config/i3/i3status
 }
 # Launch gnome-session.
-# exec gnome-session
-# exec urxvtd
+exec gnome-session
+#exec urxvtd
