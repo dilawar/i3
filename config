@@ -127,6 +127,7 @@ for_window [ class="[.]*gimp[.]*"] floating enable
 for_window [ class="[.]*scilab[.]*"] floating enable
 for_window [ class="[.]*scribus[.]*"] floating enable
 for_window [ class="[.]*ruler[.]*" ] floating enable
+for_window [ class="[.]*MOOSE[.]*" ] floating enable
 
 # reload the configuration file
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -163,8 +164,8 @@ mode "resize"
 bindsym Mod1+r mode "resize"
 
 # border
-new_window pixel 3
-bindsym $mod+Shift+y border pixel 3
+new_window pixel 7
+bindsym $mod+Shift+y border pixel 7
 bindsym $mod+Shift+u border none
 
 # Autolauches.
@@ -181,3 +182,6 @@ bar {
 # Launch gnome-session.
 exec gnome-session
 #exec urxvtd
+
+# colors
+client.focused   #0000ff  #285577 #ffffff #2e9ef4 #285577
