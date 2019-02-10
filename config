@@ -170,7 +170,6 @@ bindsym $mod+Shift+u border none
 
 # Autolauches.
 exec xscreensaver -no-splash
-exec xautolock -time 5 -locker xlock
 exec $HOME/Scripts/touchpad_disable_touch_click.sh
 exec $HOME/Scripts/remind.sh
 exec --no-startup-id feh --bg-fill ~/Scripts/wallpapers/jake_dude_sucking.jpg
