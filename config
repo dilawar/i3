@@ -128,7 +128,7 @@ for_window [ class="[.]*scilab[.]*"] floating enable
 for_window [ class="[.]*scribus[.]*"] floating enable
 for_window [ class="[.]*ruler[.]*" ] floating enable
 for_window [ class="[.]*MOOSE[.]*" ] floating enable
-for_window [ class="[.]*matplotlib[.]*" ] floating enable
+for_window [ class="matplotlib" ] floating enable
 
 # reload the configuration file
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
