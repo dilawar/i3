@@ -129,6 +129,13 @@ for_window [ class="[.]*scribus[.]*"] floating enable
 for_window [ class="[.]*ruler[.]*" ] floating enable
 for_window [ class="[.]*MOOSE[.]*" ] floating enable
 for_window [ class="matplotlib" ] floating enable
+# User floating settings. From shivansh https://github.com/dilawar/i3/commit/121809e011048fca08b2005d0efb8556f16b4d16#commitcomment-32330025
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
 
 # reload the configuration file
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
