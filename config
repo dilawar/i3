@@ -191,6 +191,7 @@ for_window [ class="[.]*scribus[.]*"] floating enable
 for_window [ class="[.]*ruler[.]*" ] floating enable
 for_window [ class="[.]*MOOSE[.]*" ] floating enable
 for_window [ class="matplotlib" ] floating enable
+for_window [ class="[.]*InputOutput[.]*" ] floating enable
 
 # JAVA windows.
 for_window [instance="sun-awt-X11-XFramePeer"] floating enable
