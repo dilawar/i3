@@ -83,6 +83,7 @@ conky.text = [[
         "full_text": " Vol: ${exec amixer sget 'Master' | grep -oP '(?<=\[)\d+%(?=\])' | head -n 1 } " 
     },
 
+
     {
         "full_text": "bat:", "separator": false, "separator_block_width":3
     },
