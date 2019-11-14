@@ -148,10 +148,10 @@ mode "resize"
         bindsym h resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -191,6 +191,8 @@ for_window [ class="[.]*scribus[.]*"] floating enable
 for_window [ class="[.]*ruler[.]*" ] floating enable
 for_window [ class="[.]*MOOSE[.]*" ] floating enable
 for_window [ class="[.]*matplotlib[.]*" ] floating enable
+for_window [ class="[.]*InputOutput[.]*" ] floating enable
+for_window [title="opencv-show"] floating enable
 
 # JAVA windows.
 for_window [instance="sun-awt-X11-XFramePeer"] floating enable
