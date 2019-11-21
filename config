@@ -191,7 +191,7 @@ for_window [ class="[.]*scribus[.]*"] floating enable
 for_window [ class="[.]*ruler[.]*" ] floating enable
 for_window [ class="[.]*MOOSE[.]*" ] floating enable
 for_window [ class="[.]*matplotlib[.]*" ] floating enable
-for_window [ class="[.]*gnuplot[.]*" ] floating enable
+for_window [ class="[.]*Gnuplot[.]*" ] floating enable
 for_window [ class="[.]*InputOutput[.]*" ] floating enable
 for_window [title="opencv-show"] floating enable
 
