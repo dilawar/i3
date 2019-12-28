@@ -47,7 +47,7 @@ bindsym Mod1+Control+t exec "mpc toggle"
 bindsym Mod1+Control+d exec "$HOME/Scripts/mpc_manage.sh -d"
 bindsym Mod1+Control+a exec "$HOME/Scripts/mpc_manage.sh -a"
 bindsym Mod4+Control+n exec "tomboy --new-note"
-bindsym Mod4+Control+j exec "$HOME/Scripts/trigger_jackass.sh"
+# bindsym Mod4+Control+j exec "$HOME/Scripts/trigger_jackass.sh"
 
 # Screenshots.
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
