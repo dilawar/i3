@@ -25,6 +25,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec "~/Scripts/terminal"
+bindsym $mod+Control+T exec xterm
 
 # kill focused window
 bindsym $mod+c kill
@@ -170,9 +171,8 @@ exec $HOME/Scripts/touchpad_disable_touch_click.sh
 exec $HOME/Scripts/remind.sh
 exec --no-startup-id feh --bg-fill ~/Scripts/wallpapers/jake_dude_sucking.jpg
 exec xscreensaver -nosplash
-
-# else normal vaninall i3lock
-exec --no-startup-id xautolock -time 5 -locker 'i3lock -c 000000'
+exec --no-startup-id xautolock -time 5 -locker 'i3lock -c 000000' 
+exec --no-startup-id xscreensaver -no-splash
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
