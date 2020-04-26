@@ -59,7 +59,7 @@ conky.text = [[
         "full_text": " IP: ${if_up eth0}${addr eth0}${endif},${if_up wlan0}${addr wlan0}${endif}"
     },
     {
-        "full_text": " D: ${downspeed enp0s25}, U: ${upspeed enp0s25}/s, D: ${totaldown enp0s25}" },
+        "full_text": " D: ${downspeed eth0}, U: ${upspeed eth0}/s, D: ${totaldown eth0}" },
     {
         "full_text": " CPU: ${cpu cpu0}% ", "color":
             ${if_match ${cpu cpu0}>90}"\#FF0000"${else}
