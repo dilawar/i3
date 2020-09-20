@@ -13,12 +13,12 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--12-120-75-75-C-70-iso10646-1
+# font -misc-fixed-medium-r-normal--12-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-# font pango:DejaVu Sans Mono 10
+font pango:DejaVu Sans Mono 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -46,8 +46,8 @@ bindsym Mod1+Control+p exec "mpc prev"
 bindsym Mod1+Control+t exec "mpc toggle"
 bindsym Mod1+Control+d exec "$HOME/Scripts/mpc_manage.sh -d"
 bindsym Mod1+Control+a exec "$HOME/Scripts/mpc_manage.sh -a"
-bindsym Mod4+Control+n exec "tomboy --new-note"
-bindsym Mod4+Control+j exec "$HOME/Scripts/trigger_jackass.sh"
+# bindsym Mod4+Control+n exec "tomboy --new-note"
+# bindsym Mod4+Control+j exec "$HOME/Scripts/trigger_jackass.sh"
 
 # Screenshots.
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
@@ -60,23 +60,11 @@ bindsym $mod+k focus up
 bindsym $mod+h focus left
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-#bindsym $mod+Left focus left
-#bindsym $mod+Down focus down
-#bindsym $mod+Up focus up
-#bindsym $mod+Right focus right
-
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+l move right
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
 bindsym Mod1+Control+h split h
@@ -173,7 +161,10 @@ exec --no-startup-id xautolock -time 5 -locker 'i3lock -c 000000'
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    status_command $HOME/.config/i3/i3status
+    # status_command $HOME/.config/i3/i3status
+    status_command exec $HOME/.config/i3/mybar
+    font pango:DejaVu Sans Mono 10
+
 }
 
 # floating windows
