@@ -155,7 +155,7 @@ bindsym $mod+Shift+u border none
 
 # Autolauches.
 exec $HOME/Scripts/touchpad_disable_touch_click.sh
-exec $HOME/Scripts/remind.sh
+# exec $HOME/Scripts/remind.sh
 exec --no-startup-id feh --bg-fill ~/Scripts/wallpapers/jake_dude_sucking.jpg
 exec --no-startup-id xautolock -time 5 -locker 'i3lock -c 000000' 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -184,6 +184,7 @@ for_window [ class="[.]*MOOSE[.]*" ] floating enable
 for_window [ class="[.]*matplotlib[.]*" ] floating enable
 for_window [ class="[.]*Gnuplot[.]*" ] floating enable
 for_window [ class="[.]*InputOutput[.]*" ] floating enable
+for_window [ class="[.]*teensy[.]*" ] floating enable
 for_window [title="opencv-show"] floating enable
 
 # JAVA windows.
